@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowerRouter, BrowserRouter} from "react-router-dom";
+import {ThemeContextProvider} from "./contexts/ThemeContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ThemeContextProvider>   {/* biz oluşturduk*/} 
     <App />
+    </ThemeContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
